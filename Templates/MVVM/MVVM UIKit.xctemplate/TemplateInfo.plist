@@ -68,18 +68,6 @@
 			<key>Type</key>
 			<string>static</string>
 		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_moduleName:identifier___State</string>
-			<key>Name</key>
-			<string>State Name:</string>
-			<key>Identifier</key>
-			<string>stateName</string>
-			<key>Description</key>
-			<string>The state name</string>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
 	</array>
 </dict>
 </plist>
