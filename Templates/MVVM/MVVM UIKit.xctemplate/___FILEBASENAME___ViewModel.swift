@@ -28,7 +28,6 @@ class ___VARIABLE_viewModelName___ {
 // MARK: Input
 
 extension ___VARIABLE_viewModelName___ {
-
     func viewDidLoad() {
 
     }
