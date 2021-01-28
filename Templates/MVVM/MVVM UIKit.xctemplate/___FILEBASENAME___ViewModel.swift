@@ -1,5 +1,11 @@
 import Foundation
 
+// MARK: State
+
+enum ___VARIABLE_stateName___ {
+    case idle
+}
+
 // MARK: Output
 
 protocol ___VARIABLE_viewModelName___Delegate: AnyObject {
@@ -23,4 +29,7 @@ class ___VARIABLE_viewModelName___ {
 
 extension ___VARIABLE_viewModelName___ {
 
+    func viewDidLoad() {
+
+    }
 }

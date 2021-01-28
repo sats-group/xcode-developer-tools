@@ -46,6 +46,18 @@
 		</dict>
 		<dict>
 			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___View</string>
+			<key>Name</key>
+			<string>View Name:</string>
+			<key>Identifier</key>
+			<string>viewName</string>
+			<key>Description</key>
+			<string>The view name</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
 			<string>___VARIABLE_moduleName:identifier___ViewModel</string>
 			<key>Name</key>
 			<string>View Model Name:</string>
