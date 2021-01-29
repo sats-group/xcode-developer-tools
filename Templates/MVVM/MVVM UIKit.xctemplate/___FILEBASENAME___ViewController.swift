@@ -26,7 +26,7 @@ class ___VARIABLE_viewControllerName___: UIViewController {
 // MARK: View model delegate
 
 extension ___VARIABLE_viewControllerName___: ___VARIABLE_viewModelName___Delegate {
-    func stateDidChange(to newState: ___VARIABLE_stateName___) {
+    func stateDidChange(to newState: ___VARIABLE_moduleName:identifier___State) {
 
     }
 }
