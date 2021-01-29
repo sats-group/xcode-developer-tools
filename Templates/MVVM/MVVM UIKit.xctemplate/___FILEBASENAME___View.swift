@@ -23,3 +23,11 @@ extension ___VARIABLE_viewName___ {
 
     }
 }
+
+// MARK: Public methods
+
+extension ___VARIABLE_viewName___ {
+    func configure(with viewData: ___VARIABLE_viewDataName___) {
+
+    }
+}
