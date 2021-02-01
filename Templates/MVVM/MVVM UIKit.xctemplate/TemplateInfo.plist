@@ -68,18 +68,6 @@
 			<key>Type</key>
 			<string>static</string>
 		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_moduleName:identifier___ViewData</string>
-			<key>Name</key>
-			<string>View Data Name:</string>
-			<key>Identifier</key>
-			<string>viewDataName</string>
-			<key>Description</key>
-			<string>The view data name</string>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
 	</array>
 </dict>
 </plist>

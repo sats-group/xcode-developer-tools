@@ -1,5 +1,9 @@
 import UIKit
 
+struct ___VARIABLE_viewName___Data {
+
+} 
+
 class ___VARIABLE_viewName___: UIView {
 
     // MARK: View definitions
@@ -27,7 +31,7 @@ extension ___VARIABLE_viewName___ {
 // MARK: Public methods
 
 extension ___VARIABLE_viewName___ {
-    func configure(with viewData: ___VARIABLE_viewDataName___) {
+    func configure(with viewData: ___VARIABLE_viewName___Data) {
 
     }
 }
@@ -40,7 +44,7 @@ import SwiftUI
 struct ___VARIABLE_viewName____Preview: PreviewProvider {
     static func getPreview() -> UIView {
         let view = ___VARIABLE_viewName___(withAutoLayout: true)
-        let viewData = ___VARIABLE_viewDataName___()
+        let viewData = ___VARIABLE_viewName___Data()
         view.configure(with: viewData)
         return view
     }
