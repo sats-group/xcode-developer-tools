@@ -1,7 +1,7 @@
 import SwiftUI
 
 struct ___VARIABLE_viewData___ {
-
+    static let placeholder: Self = .init() 
 }
 
 struct ___VARIABLE_view___: View {

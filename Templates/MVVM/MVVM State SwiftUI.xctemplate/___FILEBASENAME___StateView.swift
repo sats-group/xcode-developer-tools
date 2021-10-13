@@ -20,15 +20,20 @@ struct ___VARIABLE_stateView___: View {
         }
     }
 
-    private var loadingView: some View {
-        SimpleRepresentable<LoadingView> { loadingView in
-            loadingView.startAnimating()
+    @ViewBuilder private var loadingView: some View {
+        if #available(iOS 14.0, *) {
+            ___VARIABLE_view___(viewData: .placeholder)
+                .redacted(reason: .placeholder)
+        } else {
+            SimpleRepresentable<LoadingView> { loadingView in
+                loadingView.startAnimating()
+            }
         }
     }
 
     private func errorView(for error: Error) -> some View {
         SimpleRepresentable<ErrorView> { errorView in
-            errorView.onRetry = viewModel.fetchData
+            errorView.onRetry = viewModel.retryLoad
             errorView.configure(error: error)
         }
     }
