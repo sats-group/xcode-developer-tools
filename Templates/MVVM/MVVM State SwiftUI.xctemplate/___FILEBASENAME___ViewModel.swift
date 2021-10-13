@@ -16,8 +16,15 @@ extension ___VARIABLE_viewModel___ {
         fetchData()
     }
 
+    func retryLoad() {
+        guard case .failed = state else { return }
+        fetchData()
+    }
+
     func fetchData() {
         state = .loading
+
+        // Start fetching data here
     }
 }
 
@@ -25,7 +32,7 @@ extension ___VARIABLE_viewModel___ {
     enum State {
         case idle
         case loading
-        case loaded(viewData: ___VARIABLE_viewData___)
-        case error(viewData: ErrorViewData)
+        case loaded(___VARIABLE_viewData___)
+        case failed(Error)
     }
 }
