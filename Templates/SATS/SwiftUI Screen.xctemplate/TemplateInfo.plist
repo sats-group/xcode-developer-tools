@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Description</key>
-	<string>This generates a new module consisting of a view controller, view model and view data</string>
+	<string>Template for basic SwiftUI Screen components</string>
 	<key>Kind</key>
 	<string>Xcode.IDEKit.TextSubstitutionFileTemplateKind</string>
 	<key>Platforms</key>
@@ -16,23 +16,9 @@
 			<key>Identifier</key>
 			<string>moduleName</string>
 			<key>Name</key>
-			<string>New Module Name:</string>
+			<string>New module name:</string>
 			<key>Description</key>
 			<string>The name of the module to create</string>
-			<key>Required</key>
-			<true/>
-			<key>Type</key>
-			<string>text</string>
-		</dict>
-		<dict>
-			<key>Default</key>
-			<string>___VARIABLE_moduleName:identifier___</string>
-			<key>Name</key>
-			<string>Instance name:</string>
-			<key>Identifier</key>
-			<string>instanceName</string>
-			<key>Description</key>
-			<string>A camel case name for the variable name (example: Module &quot;ProfileView&quot;, instance name: &quot;profileView&quot;)</string>
 			<key>Required</key>
 			<true/>
 			<key>Type</key>
@@ -48,23 +34,11 @@
 		</dict>
 		<dict>
 			<key>Default</key>
-			<string>___VARIABLE_moduleName:identifier___ViewController</string>
-			<key>Name</key>
-			<string>View Controller Name:</string>
-			<key>Identifier</key>
-			<string>viewControllerName</string>
-			<key>Description</key>
-			<string>The view controller name</string>
-			<key>Type</key>
-			<string>static</string>
-		</dict>
-		<dict>
-			<key>Default</key>
 			<string>___VARIABLE_moduleName:identifier___View</string>
 			<key>Name</key>
-			<string>View Name:</string>
+			<string>View name:</string>
 			<key>Identifier</key>
-			<string>viewName</string>
+			<string>view</string>
 			<key>Description</key>
 			<string>The view name</string>
 			<key>Type</key>
@@ -72,13 +46,49 @@
 		</dict>
 		<dict>
 			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___StateView</string>
+			<key>Name</key>
+			<string>State view name:</string>
+			<key>Identifier</key>
+			<string>stateView</string>
+			<key>Description</key>
+			<string>The state view name</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___ViewData</string>
+			<key>Name</key>
+			<string>View data name:</string>
+			<key>Identifier</key>
+			<string>viewData</string>
+			<key>Description</key>
+			<string>The view data name</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
 			<string>___VARIABLE_moduleName:identifier___ViewModel</string>
 			<key>Name</key>
-			<string>View Model Name:</string>
+			<string>View model name:</string>
 			<key>Identifier</key>
-			<string>viewModelName</string>
+			<string>viewModel</string>
 			<key>Description</key>
 			<string>The view model name</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___AdapterController</string>
+			<key>Name</key>
+			<string>Adapter controller name:</string>
+			<key>Identifier</key>
+			<string>adapterController</string>
+			<key>Description</key>
+			<string>The adapter controller name</string>
 			<key>Type</key>
 			<string>static</string>
 		</dict>

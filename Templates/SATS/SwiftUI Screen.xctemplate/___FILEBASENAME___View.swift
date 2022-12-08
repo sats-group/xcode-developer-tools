@@ -1,19 +1,15 @@
 import SwiftUI
 
-struct ___VARIABLE_viewData___ {
-    static let placeholder: Self = .init() 
-}
-
 struct ___VARIABLE_view___: View {
     let viewData: ___VARIABLE_viewData___
 
     var body: some View {
-        Color.clear
+        Text(viewData.title)
     }
 }
 
 struct ___VARIABLE_view____Preview: PreviewProvider {
     static var previews: some View {
-        ___VARIABLE_view___(viewData: ___VARIABLE_viewData___())
+        ___VARIABLE_view___(viewData: .previewValue())
     }
 }
