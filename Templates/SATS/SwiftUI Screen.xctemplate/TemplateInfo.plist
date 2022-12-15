@@ -92,6 +92,18 @@
 			<key>Type</key>
 			<string>static</string>
 		</dict>
+		<dict>
+			<key>Default</key>
+			<string>___VARIABLE_moduleName:identifier___Actions</string>
+			<key>Name</key>
+			<string>View Action Protocol:</string>
+			<key>Identifier</key>
+			<string>actions</string>
+			<key>Description</key>
+			<string>The view actions</string>
+			<key>Type</key>
+			<string>static</string>
+		</dict>
 	</array>
 </dict>
 </plist>

@@ -5,27 +5,18 @@ struct ___VARIABLE_stateView___: View {
     @ObservedObject var viewModel: ___VARIABLE_viewModel___
 
     var body: some View {
-        switch viewModel.state {
-        case .idle:
-            Color.clear.onAppear(perform: viewModel.initialLoad)
-
-        case .loading:
-            ___VARIABLE_view___(viewData: .previewValue())
-                .redacted(reason: .placeholder)
-
-        case let .dataLoaded(viewData):
-            ___VARIABLE_view___(viewData: viewData)
-
-        case let .error(error):
-            errorView(for: error)
-        }
-    }
-
-    private func errorView(for error: Error) -> some View {
-        SimpleRepresentable<ErrorView> { errorView in
-            errorView.onRetry = viewModel.fetchData
-            errorView.configure(error: error)
-        }
+        BasicStateView(
+            state: viewModel.state,
+            loadingContent: {
+                ___VARIABLE_view___(viewData: .previewValue())
+                    .redacted(reason: .placeholder)
+            },
+            dataContent: { viewData in
+                ___VARIABLE_view___(viewData: viewData, actions: viewModel)
+            },
+            initialLoad: viewModel.initialLoad,
+            onErrorRetry: viewModel.reloadData
+        )
     }
 }
 
