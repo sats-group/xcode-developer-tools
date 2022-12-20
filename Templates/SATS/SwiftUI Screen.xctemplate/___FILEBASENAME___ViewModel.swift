@@ -26,7 +26,7 @@ class ___VARIABLE_viewModel___: ObservableObject {
         state = .loading
 
         do {
-            // 
+            //
             // let dto = try await client.getData()
             // let viewData = map(dto)
 

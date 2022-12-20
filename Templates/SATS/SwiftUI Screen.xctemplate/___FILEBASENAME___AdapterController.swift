@@ -3,7 +3,7 @@ import SATSNetworking
 
 class ___VARIABLE_adapterController___: UIViewController, AdapterController {
     private lazy var viewModel: ___VARIABLE_viewModel___ = {
-        return ___VARIABLE_viewModel___()
+        ___VARIABLE_viewModel___()
     }()
 
     // MARK: AdapterController
