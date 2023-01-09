@@ -12,8 +12,6 @@ class ___VARIABLE_adapterController___: UIViewController, AdapterController {
         UIHostingController(rootView: ___VARIABLE_stateView___(viewModel: viewModel))
     }()
 
-    func buildHostedView() -> ___VARIABLE_stateView___ { ___VARIABLE_stateView___(viewModel: viewModel) }
-
     // MARK: Initializers
 
     init() {
