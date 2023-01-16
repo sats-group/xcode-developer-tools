@@ -13,16 +13,16 @@ class ___VARIABLE_viewModel___: ObservableObject {
         self.state = state
     }
 
-    @MainActor func initialLoad() async {
+    func initialLoad() async {
         guard case .idle = state else { return }
         await fetchData()
     }
 
-    @MainActor func reloadData() async {
+    func reloadData() async {
         await fetchData()
     }
 
-    private func fetchData() async {
+    @MainActor private func fetchData() async {
         state = .loading
 
         do {
